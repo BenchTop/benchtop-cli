@@ -1,0 +1,42 @@
+{
+  "name": "benchtop-cli",
+  "version": "1.0.0",
+  "description": "Benchtop CLI tool for running benchmarks and uploading scores.",
+  "bin": {
+    "benchtop": "dist/index.js"
+  },
+  "scripts": {
+    "test": "jest",
+    "build": "rollup --config"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benchtop/benchtop-cli.git"
+  },
+  "keywords": [
+    "benchmark",
+    "testing"
+  ],
+  "author": "Robert Koch <robert@kochie.io>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/benchtop/benchtop-cli/issues"
+  },
+  "homepage": "https://github.com/benchtop/benchtop-cli#readme",
+  "dependencies": {
+    "commander": "^6.0.0",
+    "typescript": "^3.9.7"
+  },
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^14.0.0",
+    "@rollup/plugin-node-resolve": "^8.4.0",
+    "@rollup/plugin-typescript": "^5.0.2",
+    "@types/jest": "^26.0.9",
+    "jest": "^26.2.2",
+    "rollup": "^2.23.0",
+    "rollup-plugin-add-shebang": "^0.3.1",
+    "rollup-plugin-terser": "^6.1.0",
+    "ts-jest": "^26.1.4",
+    "tslib": "^2.0.1"
+  }
+}

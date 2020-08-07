@@ -1,6 +1,6 @@
 {
-  "name": "benchtop-cli",
-  "version": "0.0.2",
+  "name": "@benchtop/benchtop-cli",
+  "version": "0.0.3",
   "description": "Benchtop CLI tool for running benchmarks and uploading scores.",
   "bin": {
     "benchtop": "dist/index.js"
@@ -38,6 +38,5 @@
     "rollup-plugin-terser": "^6.1.0",
     "ts-jest": "^26.1.4",
     "tslib": "^2.0.1"
-  },
-  "publishConfig": { "registry": "https://npm.pkg.github.com/" }
+  }
 }

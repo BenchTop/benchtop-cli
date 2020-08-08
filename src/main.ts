@@ -1,6 +1,7 @@
 import { program } from 'commander';
+import pkg from '../package.json'
 
-program.version('0.0.1');
+program.version(pkg.version);
 
 program.parse(process.argv);
 

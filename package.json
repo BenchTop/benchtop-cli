@@ -1,6 +1,6 @@
 {
   "name": "@benchtop/benchtop-cli",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "Benchtop CLI tool for running benchmarks and uploading scores.",
   "bin": {
     "benchtop": "dist/main.js"

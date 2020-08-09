@@ -1,4 +1,4 @@
-import { bench } from 'benchtop'
+import { bench } from '@benchtop/benchtop'
 
 const func = () => {
     let n = 0

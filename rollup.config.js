@@ -42,6 +42,6 @@ export default [{
         format: 'cjs',
         sourcemap: true
     },
-    external: ['rollup', '@rollup/plugin-typescript', '@rollup/plugin-node-resolve'],
+    external: ['rollup', '@rollup/plugin-typescript', '@rollup/plugin-node-resolve', 'vm'],
     plugins: [...plugins]
 }];

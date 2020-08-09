@@ -9,7 +9,7 @@ async function bundle(filename: string): Promise<string> {
   const bundle = await rollup({
     input: filename,
     treeshake: false,
-    external: ['benchtop', 'perf_hooks'],
+    external: ['@benchtop/benchtop', 'perf_hooks',],
     plugins: [
       typescript(),
       nodeResolve()

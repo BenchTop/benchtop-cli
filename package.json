@@ -5,6 +5,7 @@
   "bin": {
     "benchtop": "dist/main.js"
   },
+  "files": ["dist/"],
   "scripts": {
     "test": "jest",
     "build": "rollup --config"
@@ -24,11 +25,11 @@
   },
   "homepage": "https://github.com/benchtop/benchtop-cli#readme",
   "dependencies": {
+    "@rollup/plugin-typescript": "^5.0.2",
     "commander": "^6.0.0",
     "glob": "^7.1.6",
-    "threads": "^1.6.3",
     "rollup": "^2.23.0",
-    "@rollup/plugin-typescript": "^5.0.2",
+    "threads": "^1.6.3",
     "tiny-worker": "^2.3.0",
     "typescript": "^3.9.7"
   },
@@ -46,5 +47,8 @@
     "rollup-plugin-worker": "^1.2.0",
     "ts-jest": "^26.1.4",
     "tslib": "^2.0.1"
+  },
+  "peerDependencies": {
+    "@benchtop/benchtop": "^0.2.2"
   }
 }

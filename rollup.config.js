@@ -10,7 +10,7 @@ import json from '@rollup/plugin-json';
 
 // `npm run build` -> `production` is true
 // `npm run dev` -> `production` is false
-const production = !process.env.ROLLUP_WATCH;
+const production = !process.env.NODE_ENV == "production";
 
 const plugins = [
         typescript(),
@@ -30,17 +30,18 @@ export default [{
     input: 'src/main.ts',
     output: {
         dir: 'dist',
-        format: 'commonjs', // immediately-invoked function expression — suitable for <script> tags
+        format: 'cjs', // immediately-invoked function expression — suitable for <script> tags
         sourcemap: true
     },
     external: ['commander', 'glob', 'threads'],
     plugins: [...plugins]
 },{
-    input: 'src/worker/index.worker.ts',
+    input: 'src/worker/benchmark.worker.ts',
     output: {
         dir: 'dist/workers',
-        format: 'commonjs',
+        format: 'cjs',
         sourcemap: true
     },
+    external: ['rollup', '@rollup/plugin-typescript', '@rollup/plugin-node-resolve'],
     plugins: [...plugins]
 }];

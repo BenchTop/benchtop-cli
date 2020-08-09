@@ -1,10 +1,10 @@
 import { program } from 'commander';
 import pkg from '../package.json'
-import {build} from "./build"
+import {run} from "./run"
 
 program
-  .command('build [pattern]', {isDefault: true})
-  .action(build)
+  .command('run [pattern]', {isDefault: true})
+  .action(run)
 
 program.version(pkg.version);
 program.parse(process.argv);

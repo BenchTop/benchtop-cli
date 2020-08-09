@@ -1,6 +1,6 @@
 {
   "name": "@benchtop/benchtop-cli",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Benchtop CLI tool for running benchmarks and uploading scores.",
   "bin": {
     "benchtop": "dist/main.js"
@@ -51,6 +51,6 @@
     "tslib": "^2.0.1"
   },
   "peerDependencies": {
-    "@benchtop/benchtop": "^0.2.2"
+    "@benchtop/benchtop": "^0.2.5"
   }
 }
